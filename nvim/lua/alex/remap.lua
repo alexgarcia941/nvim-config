@@ -1,8 +1,6 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
-
---below are abunch of remaps for specific to vim
+-- LaTeX specific remaps
 -- Compile LaTeX document
 vim.api.nvim_set_keymap('n', '<leader>lc', ':VimtexCompile<CR>', {noremap = true, silent = true})
 
@@ -17,3 +15,7 @@ vim.api.nvim_set_keymap('n', '<leader>lt', ':VimtexTocToggle<CR>', {noremap = tr
 
 -- Clean auxiliary files
 vim.api.nvim_set_keymap('n', '<leader>lC', ':VimtexClean<CR>', {noremap = true, silent = true})
+
+
+--exit terminal buffer remp
+vim.api.nvim_set_keymap('t', '<Esc><Esc>', '<C-\\><C-n>', {noremap = true, silent = true})

@@ -6,14 +6,16 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 
+  ensure_installed = {
+        'ts_ls',
         'eslint',
         'pyright',
         'html', 
         'cssls',    --css
         'clangd',   --c and c++
         'texlab',   --LaTeX
-        'gopls'     --Go
+        'gopls',     --Go
+        'templ'
     },
   handlers = {
     lsp_zero.default_setup,

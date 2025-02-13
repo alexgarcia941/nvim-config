@@ -1,4 +1,4 @@
-.*
-!/.gitignore
-gh/
-iterm2/
+*
+!nvim
+!gitignore/
+!gitignore/**/*
